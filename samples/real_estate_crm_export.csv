@@ -1,0 +1,5 @@
+LeadCreatedOn,ClientName,PrimaryEmail,SecondaryEmail,Mobile,Company,Location,AssignedTo,Status,Source,PossessionBy,Desc
+13-05-2026 14:20,John Doe,john.doe@example.com,,9876543210,GrowEasy,"Mumbai Maharashtra India",test@gmail.com,Good lead follow up,,Dec 2027,Wants site visit next week
+13-05-2026 14:25,Sarah Johnson,sarah.johnson@example.com,sarah.j2@example.com,9876543211,Tech Solutions,"Bangalore Karnataka India",test@gmail.com,Did not connect,leads on demand,,Person was busy will try again
+13-05-2026 14:30,Rajesh Patel,,,,Startup Inc,"Delhi India",test@gmail.com,Bad lead,,,Not interested no contact info at all
+13-05-2026 14:35,Priya Singh,priya.singh@example.com,,9876543213,Enterprise Corp,"Pune Maharashtra India",test@gmail.com,Sale done,varah swamy,Ready,Deal closed onboarding in progress

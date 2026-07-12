@@ -1,0 +1,30 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - PORT=4000
+      - CORS_ORIGIN=http://localhost:3000
+    # Lets the backend container reach an Ollama server running on your host
+    # machine via http://host.docker.internal:11434 (set OLLAMA_BASE_URL to
+    # that in backend/.env if AI_PROVIDER=ollama). Docker Desktop (Mac/Windows)
+    # supports this natively; this extra_hosts entry makes it work on Linux too.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:4000
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:4000
+    depends_on:
+      - backend
+    restart: unless-stopped

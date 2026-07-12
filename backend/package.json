@@ -1,0 +1,27 @@
+{
+  "name": "groweasy-csv-importer-backend",
+  "version": "1.0.0",
+  "description": "AI-powered CSV lead importer backend for GrowEasy CRM",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^2.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

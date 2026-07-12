@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #4c5fd5;
+  color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Scrollbar styling for the CSV preview/results tables */
+.grow-table::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.grow-table::-webkit-scrollbar-track {
+  background: transparent;
+}
+.grow-table::-webkit-scrollbar-thumb {
+  background-color: #d6dae2;
+  border-radius: 8px;
+}
+
+.dark .grow-table::-webkit-scrollbar-thumb {
+  background-color: #334155;
+}
